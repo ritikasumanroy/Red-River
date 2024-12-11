@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED RIVER - Donors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RED RIVER</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="donate.html">Donate</a>
+            <a href="profile.html">My Profile</a>
+            <a href="user-info.html">User Info</a>
+            <a href="donors.html">Donors</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donors">
+            <h2>Available Donors</h2>
+            <p>Search for donors by blood group and location.</p>
+            <br>
+            <br>
+            <div class="filters">
+                <label for="bloodGroupFilter">Blood Group:</label>
+                <select id="bloodGroupFilter">
+                    <option value="all">All</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <br>
+                <br>
+                <label for="locationFilter">Location:</label>
+                <input type="text" id="locationFilter" placeholder="Enter location">
+                <button onclick="filterDonors()">Search</button>
+            </div>
+            <br>
+            <br>
+            <table id="donorsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Blood Group</th>
+                        <th>Location</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blood Donation App. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/donors.js"></script>
+</body>
+</html>

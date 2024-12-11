@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation App - My Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RED RIVER</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="donate.html">Donate</a>
+            <a href="profile.html">My Profile</a>
+            <a href="user-info.html">User Info</a>
+            <a href="donors.html">Donors</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <h2>My Profile</h2>
+            <p>View and update your personal information below:</p>
+           
+            <br>
+            <br>
+             <form id="profileForm">
+                <label for="profileName">Name:</label>
+                <input type="text" id="profileName" name="profileName" value="name" required>
+                <br>
+                <br>
+                <br>
+                <label for="profileEmail">Email:</label>
+                <input type="email" id="profileEmail" name="profileEmail" value="email" required>
+                <br>
+                <br>
+                <br>
+                <label for="profileBloodGroup">Blood Group:</label>
+                <select id="profileBloodGroup" name="profileBloodGroup" required>
+                    <option value="A+" selected>A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <label for="profilePhone">Phone:</label>
+                <input type="tel" id="profilePhone" name="profilePhone" value="1234567890" required>
+                <br>
+                <br>
+                <br>
+                <button type="button" onclick="updateProfile()">Update Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blood Donation App. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/profile.js"></script>
+</body>
+</html>
